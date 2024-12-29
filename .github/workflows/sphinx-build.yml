@@ -24,7 +24,6 @@ jobs:
 
     - name: Build Sphinx documentation
       run: |
-        make clean   # 清理旧的构建文件
         make html    # 生成 HTML 格式的文档
 
     - name: Add .nojekyll to prevent Jekyll processing
