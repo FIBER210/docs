@@ -20,12 +20,13 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r docs/requirements.txt
+        # 如果 requirements.txt 在 docs 目录下，使用 docs/requirements.txt
+        # 如果在根目录下，使用 requirements.txt
+        pip install -r requirements.txt  # 如果 requirements.txt 在根目录下
 
     - name: Build Sphinx documentation
       run: |
-        # 确保 source 目录存在且路径正确
-        sphinx-build -b html docs/source docs/_build/html  # 更新 source 和 build 目录的路径
+        sphinx-build -b html docs/source docs/_build/html
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
