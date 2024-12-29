@@ -20,13 +20,16 @@ jobs:
 
     - name: Install dependencies
       run: |
-        # 如果 requirements.txt 在 docs 目录下，使用 docs/requirements.txt
-        # 如果在根目录下，使用 requirements.txt
-        pip install -r requirements.txt  # 如果 requirements.txt 在根目录下
+        pip install -r requirements.txt
 
     - name: Build Sphinx documentation
       run: |
-        sphinx-build -b html docs/source docs/_build/html
+        make clean   # 清理旧的构建文件
+        make html    # 生成 HTML 格式的文档
+
+    - name: Add .nojekyll to prevent Jekyll processing
+      run: |
+        touch docs/_build/html/.nojekyll  # 在 _build/html 目录下创建 .nojekyll 文件
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
