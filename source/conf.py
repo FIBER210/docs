@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'abcd'
+project = 'Fiber210'
 copyright = '2024, ldx'
 author = 'ldx'
 release = '0.1.0'
