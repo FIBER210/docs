@@ -1,0 +1,76 @@
+/* 页面整体布局 */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;  /* 确保 HTML 和 body 元素占满全屏 */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 页头 */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* 确保页头浮动在其他内容之上 */
+}
+
+/* 主容器 */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;  /* 留出空间给固定的页头 */
+    height: calc(100vh - 80px);  /* 使主容器占满剩余空间，减去页头的高度 */
+    width: 100%;
+}
+
+/* 左侧目录 */
+.sidebar-left {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;  /* 允许左侧目录滚动 */
+    height: 100%;  /* 确保左侧目录占满屏幕高度 */
+}
+
+/* 内容区域 */
+.content {
+    width: 60%;
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    overflow-y: auto;  /* 允许内容区域滚动 */
+    height: 100%;  /* 确保内容区域占满屏幕高度 */
+}
+
+/* 右侧目录 */
+.sidebar-right {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;  /* 允许右侧目录滚动 */
+    height: 100%;  /* 确保右侧目录占满屏幕高度 */
+}
+
+/* 增加页面适配 */
+@media (max-width: 1200px) {
+    .main-container {
+        flex-direction: column;
+        padding-top: 100px;  /* 留出空间给固定的页头 */
+    }
+    .sidebar-left, .sidebar-right {
+        width: 100%;
+        height: auto;
+    }
+    .content {
+        width: 100%;
+    }
+}
