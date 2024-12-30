@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+  pull_request:
+    types: [opened, synchronize, reopened]  # 监听 PR 的打开、同步和重新打开
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
