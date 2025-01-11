@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>使用T300进行打印 &mdash; Fiber210 0.1.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=d786bb5c"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="设备的维护及保养" href="%E8%AE%BE%E5%A4%87%E7%9A%84%E7%BB%B4%E6%8A%A4%E5%8F%8A%E4%BF%9D%E5%85%BB.html" />
+    <link rel="prev" title="初次打印前的准备" href="%E5%88%9D%E6%AC%A1%E6%89%93%E5%8D%B0%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Fiber210
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">T300使用说明</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="%E6%A6%82%E8%BF%B0.html">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E5%88%9D%E6%AC%A1%E6%89%93%E5%8D%B0%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87.html">初次打印前的准备</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">使用T300进行打印</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">3.1 打印前的准备、检查与清洁</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">3.1.1 打印机工作环境检查</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">3.1.2 清洁热床</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">3.1.3 清洁喷头</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">3.2 打印模型的准备</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">3.2.1 处理模型文件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">3.2.2 模型文件切片</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">3.2.3 打印文件上传</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">3.3 喷头与热床的温度设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id18">3.4 归位所有轴</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id21">3.5 选择文件并打印</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d">3.6 收取3D打印零件</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="%E8%AE%BE%E5%A4%87%E7%9A%84%E7%BB%B4%E6%8A%A4%E5%8F%8A%E4%BF%9D%E5%85%BB.html">设备的维护及保养</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E5%B8%B8%E8%A7%81%E6%95%85%E9%9A%9C%E5%8F%8A%E5%85%B6%E6%8E%92%E9%99%A4.html">常见故障及其排除</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">iFiber使用说明</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../iFiber%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E7%AE%80%E4%BB%8B.html">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../iFiber%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E5%AE%89%E8%A3%85.html">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../iFiber%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.html">使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../iFiber%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E6%89%93%E5%8D%B0%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.html">打印参数设置</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Fiber210</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">使用T300进行打印</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/T300使用说明/使用T300进行打印.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="t300">
+<h1>使用T300进行打印<a class="headerlink" href="#t300" title="Link to this heading"></a></h1>
+<section id="id1">
+<h2>3.1 打印前的准备、检查与清洁<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p><strong>注意</strong>：</p>
+<p>■ 打印开始前，请务必检查丝材是否充足，若需要更换丝材，请按照2.3步骤进行。</p>
+<section id="id2">
+<h3>3.1.1 打印机工作环境检查<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<p>打印机应置于干燥、清洁的工作环境中，避免在高温、潮湿及灰尘较大的环境中工作。打印机应置于坚固、稳定、平整且干燥的表面，并确保打印机稳定地置于表面上，不发生晃动，以防止打印机高速工作时造成工作台及设备的剧烈震动。避免较尖锐的物品接触打印机表面，以免造成损伤。</p>
+</section>
+</section>
+<section id="id3">
+<h2>3.1.2 清洁热床<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<p>打印开始前，需要清洁热床，防止打印受到上一次打印的残留基体的影响。
+清洁流程参考下列步骤：</p>
+<ul class="simple">
+<li><p>室温条件下，将打印板从热床上取下</p></li>
+<li><p>使用铲刀把热床表面黏附的基体或纤维残留物清理干净</p></li>
+<li><p>用水或者酒精清洗打印板表面，然后使用无纺布擦干</p></li>
+<li><p>将打印板放回热床，加热至 60~80度之间</p></li>
+<li><p>带上防护手套（隔热），取下打印板，再打印板表面均匀的喷涂3D打印平台喷雾</p></li>
+<li><p>放回打印板</p></li>
+<li><p>如使用其他款式的胶水或平台喷雾，请参考厂商给出的使用指南，平台喷雾可以使首层与打印板的结合更加牢固，同一区域喷雾的效果可维持五次打印</p></li>
+</ul>
+<section id="id4">
+<h3>3.1.3 清洁喷头<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>打印头开始运动前，需要清洁两个喷头，（可使用刷子或镊子），防止喷嘴上黏附基体，导致归位的误差，从而引起打印失败。</p>
+<p>清洁基体喷嘴时，需要将基体喷嘴升温到打印温度，待喷嘴表面黏附的基体融化后，使用刷子将其刷去即可。</p>
+<p>清洁纤维喷嘴时，若喷头上可见挤出的纤维，可按照2.3.2中的操作步骤剪断纤维，参见图2.28，2.29。然后使用镊子把这段纤维夹出。</p>
+<figure class="align-center" id="id5">
+<img alt="../_images/%E5%96%B7%E5%A4%B4%E4%B8%8A%E6%9C%89%E6%AE%8B%E7%95%99%E7%BA%A4%E7%BB%B4.png" src="../_images/%E5%96%B7%E5%A4%B4%E4%B8%8A%E6%9C%89%E6%AE%8B%E7%95%99%E7%BA%A4%E7%BB%B4.png" />
+<figcaption>
+<p><span class="caption-text">图3.1 喷头上有残留纤维</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="id6">
+<h2>3.2 打印模型的准备<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<section id="id7">
+<h3>3.2.1 处理模型文件<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<p>在打印前，请先准备零件的数模，stl格式。</p>
+<p>可以使用Solidworks软件进行建模，或者将已有模型导入Solidworks软件进行格式转换。将其他格式建模文件转换或另存为stl格式时，请点击“选项”按钮，保证“不要转换STL输出数据到正的坐标空间”选项被勾选。</p>
+<p>该选项会保留原始坐标信息，以便后续使用Solidworks导出零件DXF时，坐标能够匹配。</p>
+<figure class="align-center" id="id8">
+<img alt="../_images/SolidWorks%E5%8F%A6%E5%AD%98%E4%B8%BA%E7%95%8C%E9%9D%A2.png" src="../_images/SolidWorks%E5%8F%A6%E5%AD%98%E4%B8%BA%E7%95%8C%E9%9D%A2.png" />
+<figcaption>
+<p><span class="caption-text">图3.2 SolidWorks另存为界面</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id9">
+<img alt="../_images/%E9%9C%80%E8%A6%81%E5%8B%BE%E9%80%89%E7%9A%84%E9%80%89%E9%A1%B9.png" src="../_images/%E9%9C%80%E8%A6%81%E5%8B%BE%E9%80%89%E7%9A%84%E9%80%89%E9%A1%B9.png" />
+<figcaption>
+<p><span class="caption-text">图3.3 需要勾选的选项</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id10">
+<h3>3.2.2 模型文件切片<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<p><strong>注意</strong>：</p>
+<p>■ iFiber软件的详细使用说明可参考《连续纤维切片软件使用指南》。</p>
+<p>使用T300打印时，可以使用Cura、Prusa Slicer、Super Slicer、Simplify3D、Orca Slicer等切片软件（RepRap风格，且需要修改start.gcode以及end.gcode适配打印）或者iFiber（开箱即用），需要打印连续纤维复合材料零件的时候，只能使用iFiber。</p>
+<p>按照使用指南使用iFiber对零件进行切片设置后，得到零件的Gcode文件。</p>
+<figure class="align-center" id="id11">
+<img alt="../_images/iFiber%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2.png" src="../_images/iFiber%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2.png" />
+<figcaption>
+<p><span class="caption-text">图3.4 iFiber软件界面</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="id12">
+<h2>3.2.3 打印文件上传<a class="headerlink" href="#id12" title="Link to this heading"></a></h2>
+<p>按照如下步骤上传Gcode文件：</p>
+<ul class="simple">
+<li><p>使用电脑访问打印机管理界面（在浏览器界面输入打印机IP地址自动跳转）</p></li>
+<li><p>向下翻动界面，找到任务列表区域（图3.5），点击任务列表标题下方的“+”，选择“上传文件”选项</p></li>
+<li><p>找到切片获得的Gcode并双击（图3.6）。Gcode上传成功后会添加进任务列表</p></li>
+</ul>
+<figure class="align-center" id="id13">
+<img alt="../_images/%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6.png" src="../_images/%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6.png" />
+<figcaption>
+<p><span class="caption-text">图3.5 上传文件</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id14">
+<img alt="../_images/%E9%80%89%E6%8B%A9Gcode%E6%96%87%E4%BB%B6.png" src="../_images/%E9%80%89%E6%8B%A9Gcode%E6%96%87%E4%BB%B6.png" />
+<figcaption>
+<p><span class="caption-text">图3.6 选择Gcode文件</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id15">
+<h2>3.3 喷头与热床的温度设置<a class="headerlink" href="#id15" title="Link to this heading"></a></h2>
+<p>进入触摸屏初始界面，点击“Temperature”选项，然后点击“nylon_ccf_heating”选项（图3.7）。该选项适用于PA-CF基体和PET-CF基体以及PA基连续碳纤维预浸丝。</p>
+<p>加热后请注意安全，避免直接接触热源。</p>
+<figure class="align-center" id="id16">
+<img alt="../_images/%E8%87%AA%E5%8A%A8%E5%8D%87%E6%B8%A9%E9%80%89%E9%A1%B9.png" src="../_images/%E8%87%AA%E5%8A%A8%E5%8D%87%E6%B8%A9%E9%80%89%E9%A1%B9.png" />
+<figcaption>
+<p><span class="caption-text">图3.7 自动升温选项</span><a class="headerlink" href="#id16" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>若需要自定义打印温度，可分别点击左侧的三个温度数字，输入所要设定的温度数值即可（图3.8）。如需冷却，可以将温度设置为0，或者点击图3.7中的Cooldown按钮。</p>
+<figure class="align-center" id="id17">
+<img alt="../_images/%E6%89%8B%E5%8A%A8%E5%8D%87%E6%B8%A9%E9%80%89%E9%A1%B9.png" src="../_images/%E6%89%8B%E5%8A%A8%E5%8D%87%E6%B8%A9%E9%80%89%E9%A1%B9.png" />
+<figcaption>
+<p><span class="caption-text">图3.8 手动升温选项</span><a class="headerlink" href="#id17" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id18">
+<h2>3.4 归位所有轴<a class="headerlink" href="#id18" title="Link to this heading"></a></h2>
+<p>在打印机移动开始前，必须对所有轴进行归位。</p>
+<p><strong>在正式打印开始前，应该在预设的打印温度下进行归位、自动调平和网床补偿，以排除喷嘴、热床热膨胀带来的z轴定位误差，调整时务必保证喷嘴清洁。</strong></p>
+<p>进入触摸屏初始界面，点击“Move”选项并找到“Home”命令（图3.9），然后在跳转进入的页面内点击“Home All”命令（图3.10），打印机即会自动开始Home定位。</p>
+<figure class="align-center" id="id19">
+<img alt="../_images/Move%E7%95%8C%E9%9D%A2.png" src="../_images/Move%E7%95%8C%E9%9D%A2.png" />
+<figcaption>
+<p><span class="caption-text">图3.9 Move界面</span><a class="headerlink" href="#id19" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id20">
+<img alt="../_images/HomeAll%E5%91%BD%E4%BB%A4.png" src="../_images/HomeAll%E5%91%BD%E4%BB%A4.png" />
+<figcaption>
+<p><span class="caption-text">图3.10 HomeAll命令</span><a class="headerlink" href="#id20" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id21">
+<h2>3.5 选择文件并打印<a class="headerlink" href="#id21" title="Link to this heading"></a></h2>
+<p>进入初始界面后，点击“Print”选项，找到上传的Gcode并点击（图3.11），确定要打印的Gcode后点击“Print”（图3.12）。T300打印机即会开始进行打印，触摸屏会显示打印运行时的界面（图3.13）。</p>
+<figure class="align-center" id="id22">
+<img alt="../_images/%E9%80%89%E6%8B%A9Gcode.png" src="../_images/%E9%80%89%E6%8B%A9Gcode.png" />
+<figcaption>
+<p><span class="caption-text">图3.11 选择Gcode</span><a class="headerlink" href="#id22" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id23">
+<img alt="../_images/%E7%A1%AE%E5%AE%9A%E8%A6%81%E6%89%93%E5%8D%B0%E7%9A%84Gcode.png" src="../_images/%E7%A1%AE%E5%AE%9A%E8%A6%81%E6%89%93%E5%8D%B0%E7%9A%84Gcode.png" />
+<figcaption>
+<p><span class="caption-text">图3.12 确定要打印的Gcode</span><a class="headerlink" href="#id23" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>打印开始后，屏幕界面中展示了打印机的一些实时数据，如两个喷头与热床的温度、实际/预设打印速度、挤出机的流量、打印头高度等。</p>
+<p>主要按钮的名称及功能如下：</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>Pause</p></td>
+<td><p>暂停，打印暂停，保留打印过程中的状态，直至恢复或取消打印</p></td>
+</tr>
+<tr class="row-even"><td><p>Cancel</p></td>
+<td><p>取消，打印取消</p></td>
+</tr>
+<tr class="row-odd"><td><p>Settings</p></td>
+<td><p>取消，打印取消</p></td>
+</tr>
+<tr class="row-even"><td><p>Fine Tuning</p></td>
+<td><p>微调，对打印过程进行微调</p></td>
+</tr>
+</tbody>
+</table>
+<p>有关打印界面及其相关操作的更多信息，请参考 <a class="reference external" href="https://klipperscreen.readthedocs.io/en/latest/#about-the-project">klipper screen 官方文档</a> 。</p>
+<figure class="align-center" id="id24">
+<img alt="../_images/%E6%89%93%E5%8D%B0%E8%BF%90%E8%A1%8C%E7%95%8C%E9%9D%A2.png" src="../_images/%E6%89%93%E5%8D%B0%E8%BF%90%E8%A1%8C%E7%95%8C%E9%9D%A2.png" />
+<figcaption>
+<p><span class="caption-text">图3.13 打印运行界面</span><a class="headerlink" href="#id24" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id25">
+<img alt="../_images/%E5%BE%AE%E8%B0%83%E7%95%8C%E9%9D%A2.png" src="../_images/%E5%BE%AE%E8%B0%83%E7%95%8C%E9%9D%A2.png" />
+<figcaption>
+<p><span class="caption-text">图3.14 微调界面</span><a class="headerlink" href="#id25" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="d">
+<h2>3.6 收取3D打印零件<a class="headerlink" href="#d" title="Link to this heading"></a></h2>
+<p>注意：</p>
+<p>■ 打印完成后，请勿立即断开电源</p>
+<p>■ 待打印头温度降至接近室温（热端风扇停止转动时）后再断电</p>
+<p>■ 否则可能造成基体打印头喉管堵塞。</p>
+<p>打印完成且热床已冷却到室温后，可以使用铲刀将零件与打印板分离，或者取下打印板，弯曲打印板将零件取下。收取零件后请按照3.1.2，3.1.3中的操作对热床和喷头进行清洁。</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="%E5%88%9D%E6%AC%A1%E6%89%93%E5%8D%B0%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87.html" class="btn btn-neutral float-left" title="初次打印前的准备" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="%E8%AE%BE%E5%A4%87%E7%9A%84%E7%BB%B4%E6%8A%A4%E5%8F%8A%E4%BF%9D%E5%85%BB.html" class="btn btn-neutral float-right" title="设备的维护及保养" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024, ldx。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
