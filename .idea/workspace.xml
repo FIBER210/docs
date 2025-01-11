@@ -4,51 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7498a5d-d9ea-48a6-9017-2b53ec6d9df6" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/A4纸测试.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/HomeAll命令.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/Home菜单.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/Move界面.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/RECORD_HEIGHT宏命令.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/SolidWorks另存为界面.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/iFiber软件界面.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/measure_height操作示意.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/zCalibrate校准中界面.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/上传文件.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/两个擦嘴装置.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/使用Web控制机器归位所有轴.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/关闭BedMesh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/切割塑料耗材.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/切割截面形状.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/喷头上有残留纤维.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/微调界面.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/手动升温选项.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/打印运行界面.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/拨动塑料头压紧开关.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/拨动纤维头压紧开关.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/控制台区域.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/控制台命令行.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/点击Calibrate命令运行.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/点击More选项后，找到BedMesh选项.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/点击More选项后，找到Console选项.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/点击measure_height指令.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/确定要打印的Gcode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/自动升温选项.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/调平按钮.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/运行结束后确认.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/进入宏指令部分.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/选择Gcode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/选择Gcode文件.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/选择纤维打印头.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/重启打印机.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/T300使用说明/image/需要勾选的选项.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/T300使用说明/使用T300进行打印.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/T300使用说明/使用T300进行打印.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/T300使用说明/初次打印前的准备.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/T300使用说明/初次打印前的准备.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/T300使用说明/常见故障及其排除.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/T300使用说明/常见故障及其排除.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/T300使用说明/设备的维护及保养.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/T300使用说明/设备的维护及保养.rst" afterDir="false" />
-    </list>
+    <list default="true" id="a7498a5d-d9ea-48a6-9017-2b53ec6d9df6" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,10 +14,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="2rKVY50s9dvwD14kocbUiddGoG4" />
+  <component name="ProjectId" id="2quwwW6yz4WwIaNAHFKvPLBr3yk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,7 +24,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ldx-addt300&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
   <component name="SharedIndexes">
@@ -82,11 +37,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="a7498a5d-d9ea-48a6-9017-2b53ec6d9df6" name="更改" comment="" />
-      <created>1736307798380</created>
+      <changelist id="a6ee007a-9ff3-4e7e-ba99-4cb0851ea291" name="更改" comment="" />
+      <created>1735526008128</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1736307798380</updated>
+      <updated>1735526008128</updated>
     </task>
     <servers />
   </component>
