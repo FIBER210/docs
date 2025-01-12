@@ -56,9 +56,10 @@
 <li class="toctree-l1"><a class="reference internal" href="%E7%AE%80%E4%BB%8B.html">简介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="%E5%AE%89%E8%A3%85.html">安装</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">使用说明</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#stl">1. stl模型导入和处理</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">2. 调参切片</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#gcode">3. 生成Gcode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.1     软件激活方法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stl">3.2 stl模型导入和处理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">3.3 调参切片</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gcode">3.4 生成Gcode</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="%E6%89%93%E5%8D%B0%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.html">打印参数设置</a></li>
@@ -90,14 +91,46 @@
              
   <section id="id1">
 <h1>使用说明<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>若软件已激活直接前往3.2</p>
+<section id="id2">
+<h2>3.1     软件激活方法<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>未获得机器授权时，切片将会弹出错误窗口，鼠标点选窗口，按照提示复制窗口内信息，提取硬件ID。</p>
+<figure class="align-center" id="id3">
+<img alt="../_images/%E5%9B%BE3.1.png" src="../_images/%E5%9B%BE3.1.png" />
+<figcaption>
+<p><span class="caption-text">图3.1</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>与我们联系获取授权文件regkey.dat。许可证文件仅对单台电脑生效。</p>
+<figure class="align-center" id="id4">
+<img alt="../_images/%E5%9B%BE3.2.png" src="../_images/%E5%9B%BE3.2.png" />
+<figcaption>
+<p><span class="caption-text">图3.2</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>将授权文件regkey.dat放置到文件的安装目录下。再次运行切片程序。</p>
+<figure class="align-center" id="id5">
+<img alt="../_images/%E5%9B%BE3.3.png" src="../_images/%E5%9B%BE3.3.png" />
+<figcaption>
+<p><span class="caption-text">图3.3</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>注册成功后可正常使用。</p>
+<figure class="align-center" id="id6">
+<img alt="../_images/%E5%9B%BE3.4.png" src="../_images/%E5%9B%BE3.4.png" />
+<figcaption>
+<p><span class="caption-text">图3.4</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
 <section id="stl">
-<h2>1. stl模型导入和处理<a class="headerlink" href="#stl" title="Link to this heading"></a></h2>
+<h2>3.2 stl模型导入和处理<a class="headerlink" href="#stl" title="Link to this heading"></a></h2>
 <p>打开软件后，点击右侧界面中的 <cite>Load</cite> 按钮导入模型。</p>
 <a class="reference internal image-reference" href="../_images/导入模型.png"><img alt="导入模型" src="../_images/%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9E%8B.png" style="width: 400px;" />
 </a>
 </section>
-<section id="id2">
-<h2>2. 调参切片<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<section id="id7">
+<h2>3.3 调参切片<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <p>调整左边的切片参数。</p>
 <a class="reference internal image-reference" href="../_images/查看参数说明.png"><img alt="查看参数说明" src="../_images/%E6%9F%A5%E7%9C%8B%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E.png" style="width: 500px;" />
 </a>
@@ -108,7 +141,7 @@
 </a>
 </section>
 <section id="gcode">
-<h2>3. 生成Gcode<a class="headerlink" href="#gcode" title="Link to this heading"></a></h2>
+<h2>3.4 生成Gcode<a class="headerlink" href="#gcode" title="Link to this heading"></a></h2>
 <p>检查打印路径没有问题后，即可点击左上角的中间按钮，导出 G 代码准备打印。</p>
 <a class="reference internal image-reference" href="../_images/导出gcode.png"><img alt="导出gcode" src="../_images/%E5%AF%BC%E5%87%BAgcode.png" style="width: 600px;" />
 </a>

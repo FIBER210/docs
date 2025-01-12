@@ -90,6 +90,7 @@
              
   <section id="id1">
 <h1>打印参数设置<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>模型调整好后，开始配置模型的切片参数，从左到右依次为：Fiber（纤维切片参数栏）、Basic（基体基础参数栏）、Advanced（基体高级参数栏）、Start/End-Gcode（用户自定义G代码栏）。</p>
 <section id="fiber">
 <h2>1. Fiber栏<a class="headerlink" href="#fiber" title="Link to this heading"></a></h2>
 <ul class="simple">
@@ -109,7 +110,7 @@
 <li><p><strong>Fiber feed speed (mm/s)</strong>：主动段纤维打印速度（通常为 5-10mm/s）</p></li>
 <li><p><strong>Fiber drag speed (mm/s)</strong>：被动段纤维打印速度（通常为 Fiber feed speed 的 50%）</p></li>
 <li><p><strong>Fiber slowdown threshold (mm)</strong>：纤维减速段长度</p></li>
-<li><p><strong>Corner speed (mm/s)</strong>：转角速度（通常为 0.5-1mm/s）</p></li>
+<li><p><strong>Corner speed (mm/s)</strong>：转角速度（通常为 0.5-1mm/s），长度小于减速阈值的路径将使用该速度。</p></li>
 </ul>
 </dd>
 </dl>
@@ -130,7 +131,7 @@
 - c) Zigzag：生成 Z 字形纤维增强路径
 - d) Line：生成线形纤维增强路径
 - e) Custom：导入自定义纤维路径</p></li>
-<li><p><strong>Fiber reinforce list</strong>：纤维增强层设置（例：要在 5-10 层加入纤维，将该参数设置为 5,10）</p></li>
+<li><p><strong>Fiber reinforce list</strong>：纤维增强层设置（例：要在 5-10 层加入纤维，将该参数设置为 5,10;）</p></li>
 <li><p><strong>Fiber reinforce interval</strong>：纤维间隔增强，设置为 0 时，每个增强层均加入纤维，设置为 1 时，纤维层和塑料层交替出现</p></li>
 </ul>
 </dd>
@@ -174,7 +175,7 @@
 </li>
 <li><dl class="simple">
 <dt><strong>Speed</strong></dt><dd><ul>
-<li><p><strong>Print speed (mm/s)</strong>：打印头的移动速度。</p></li>
+<li><p><strong>Print speed (mm/s)</strong>：支撑结构的打印速度。</p></li>
 </ul>
 </dd>
 </dl>
@@ -190,18 +191,18 @@
 </li>
 <li><dl class="simple">
 <dt><strong>Support</strong></dt><dd><ul>
-<li><p><strong>Support type</strong>：Everywhere - 这表示在整个打印对象上生成支撑结构，以帮助悬空部分的打印。</p></li>
+<li><p><strong>Support type</strong>：Everywhere ：仅在支撑结构会接触构建平台的地方创建支撑。</p></li>
 <li><p><strong>Platform adhesion type</strong>
-- a) None：生成 Skirt。Skirt 是一种在对象周围打印的轮廓线，用于帮助挤出机稳定和清洁喷嘴。
-- b) Brim：边缘。它在对象周围添加一层单层厚的平坦区域，这个区域在打印完成后易于切除。
-- c) Raft：在对象下方底座。</p></li>
+- a) None：默认生成裙边skirt。
+- b) Brim：生成从零件首层轮廓向外延伸的裙边。
+- c) Raft：在零件下方打印底座。</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
 <dt><strong>Filament</strong></dt><dd><ul>
-<li><p><strong>Diameter (mm)</strong>：打印材料的直径。</p></li>
+<li><p><strong>Diameter (mm)</strong>：基体打印材料的直径。</p></li>
 <li><p><strong>Flow (%)</strong>：材料挤出量的百分比。通常为 100。</p></li>
 </ul>
 </dd>
@@ -209,7 +210,7 @@
 </li>
 <li><dl class="simple">
 <dt><strong>Machine</strong></dt><dd><ul>
-<li><p><strong>Nozzle size (mm)</strong>：塑料喷嘴的直径。</p></li>
+<li><p><strong>Nozzle size (mm)</strong>：塑料喷嘴直径，与基体挤出宽度一致。</p></li>
 </ul>
 </dd>
 </dl>
@@ -259,11 +260,20 @@
 </section>
 <section id="start-end-gcode">
 <h2>4. Start/End-Gcode栏<a class="headerlink" href="#start-end-gcode" title="Link to this heading"></a></h2>
+<ul>
+<li><p><strong>start.gcode</strong>：打印任务开始时执行的Gcode片段</p>
+<blockquote>
+<div><p>如果要进行保存可在srart.gcode第一行前加入以下gcode片段。(仅在T300A和T300B生效)</p>
+</div></blockquote>
+</li>
+</ul>
+<div class="highlight-gcode notranslate"><div class="highlight"><pre><span></span>EXTRACT_PARAMS
+</pre></div>
+</div>
 <ul class="simple">
-<li><p><strong>start.gcode</strong>：打印开始 Gcode 配置</p></li>
-<li><p><strong>end.gcode</strong>：打印结束 Gcode 配置</p></li>
-<li><p><strong>T0SwitchCode.gcode</strong>：切换为基体头时 Gcode 配置</p></li>
-<li><p><strong>T1SwitchCode.gcode</strong>：切换为纤维头时 Gcode 配置</p></li>
+<li><p><strong>end.gcode</strong>：打印任务结束时执行的Gcode片段</p></li>
+<li><p><strong>T0SwitchCode.gcode</strong>：打印过程中切换到基体头时执行的Gcode片段</p></li>
+<li><p><strong>T1SwitchCode.gcode</strong>：打印过程中切换到纤维头时执行的Gcode片段</p></li>
 </ul>
 </section>
 </section>
