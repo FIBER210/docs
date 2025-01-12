@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7498a5d-d9ea-48a6-9017-2b53ec6d9df6" name="更改" comment="" />
+    <list default="true" id="a7498a5d-d9ea-48a6-9017-2b53ec6d9df6" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/source/iFiber使用说明/图3.1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/iFiber使用说明/图3.2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/iFiber使用说明/图3.3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/iFiber使用说明/图3.4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/iFiber使用说明/使用说明.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/iFiber使用说明/使用说明.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/iFiber使用说明/打印参数设置.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/iFiber使用说明/打印参数设置.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/iFiber使用说明/简介.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/iFiber使用说明/简介.rst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,12 +30,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "ldx__ifber"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -37,7 +46,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="a6ee007a-9ff3-4e7e-ba99-4cb0851ea291" name="更改" comment="" />
+      <changelist id="a7498a5d-d9ea-48a6-9017-2b53ec6d9df6" name="更改" comment="" />
       <created>1735526008128</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
