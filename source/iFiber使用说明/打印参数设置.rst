@@ -1,6 +1,8 @@
 打印参数设置
 ============
 
+模型调整好后，开始配置模型的切片参数，从左到右依次为：Fiber（纤维切片参数栏）、Basic（基体基础参数栏）、Advanced（基体高级参数栏）、Start/End-Gcode（用户自定义G代码栏）。
+
 1. Fiber栏
 -----------
 - **FiberBasic**
@@ -14,7 +16,7 @@
    - **Fiber feed speed (mm/s)**：主动段纤维打印速度（通常为 5-10mm/s）
    - **Fiber drag speed (mm/s)**：被动段纤维打印速度（通常为 Fiber feed speed 的 50%）
    - **Fiber slowdown threshold (mm)**：纤维减速段长度
-   - **Corner speed (mm/s)**：转角速度（通常为 0.5-1mm/s）
+   - **Corner speed (mm/s)**：转角速度（通常为 0.5-1mm/s），长度小于减速阈值的路径将使用该速度。
 
 - **FiberPrint**
    - **Print fiber first**：纤维打印顺序，勾选后顺序为每层内先打印纤维路径，再打印塑料路径，默认开启
@@ -27,7 +29,7 @@
      - c) Zigzag：生成 Z 字形纤维增强路径
      - d) Line：生成线形纤维增强路径
      - e) Custom：导入自定义纤维路径
-   - **Fiber reinforce list**：纤维增强层设置（例：要在 5-10 层加入纤维，将该参数设置为 5,10）
+   - **Fiber reinforce list**：纤维增强层设置（例：要在 5-10 层加入纤维，将该参数设置为 5,10;）
    - **Fiber reinforce interval**：纤维间隔增强，设置为 0 时，每个增强层均加入纤维，设置为 1 时，纤维层和塑料层交替出现
 
 - **FiberIroning**
@@ -52,7 +54,7 @@
    - **Fill Density (%)**：内部填充的密度。通常为 40。
 
 - **Speed**
-   - **Print speed (mm/s)**：打印头的移动速度。
+   - **Print speed (mm/s)**：支撑结构的打印速度。
 
 - **Temperature**
    - **Plastic nozzle temperature (C)**：塑料喷嘴的温度。
@@ -60,18 +62,18 @@
    - **Bed temperature (C)**：打印床的温度。
 
 - **Support**
-   - **Support type**：Everywhere - 这表示在整个打印对象上生成支撑结构，以帮助悬空部分的打印。
+   - **Support type**：Everywhere ：仅在支撑结构会接触构建平台的地方创建支撑。
    - **Platform adhesion type**
-     - a) None：生成 Skirt。Skirt 是一种在对象周围打印的轮廓线，用于帮助挤出机稳定和清洁喷嘴。
-     - b) Brim：边缘。它在对象周围添加一层单层厚的平坦区域，这个区域在打印完成后易于切除。
-     - c) Raft：在对象下方底座。
+     - a) None：默认生成裙边skirt。
+     - b) Brim：生成从零件首层轮廓向外延伸的裙边。
+     - c) Raft：在零件下方打印底座。
 
 - **Filament**
-   - **Diameter (mm)**：打印材料的直径。
+   - **Diameter (mm)**：基体打印材料的直径。
    - **Flow (%)**：材料挤出量的百分比。通常为 100。
 
 - **Machine**
-   - **Nozzle size (mm)**：塑料喷嘴的直径。
+   - **Nozzle size (mm)**：塑料喷嘴直径，与基体挤出宽度一致。
 
 3. Advanced栏
 --------------
@@ -97,7 +99,15 @@
 
 4. Start/End-Gcode栏
 ----------------------
-- **start.gcode**：打印开始 Gcode 配置
-- **end.gcode**：打印结束 Gcode 配置
-- **T0SwitchCode.gcode**：切换为基体头时 Gcode 配置
-- **T1SwitchCode.gcode**：切换为纤维头时 Gcode 配置
+
+- **start.gcode**：打印任务开始时执行的Gcode片段
+
+    如果要进行保存可在srart.gcode第一行前加入以下gcode片段。(仅在T300A和T300B生效)
+
+.. code-block:: gcode
+
+    EXTRACT_PARAMS
+
+- **end.gcode**：打印任务结束时执行的Gcode片段
+- **T0SwitchCode.gcode**：打印过程中切换到基体头时执行的Gcode片段
+- **T1SwitchCode.gcode**：打印过程中切换到纤维头时执行的Gcode片段
