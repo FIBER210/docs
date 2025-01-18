@@ -6,7 +6,7 @@
    `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
      documentation for details.
 
-
+本文档的主要目的是方便同济大学济事楼210实验室的各位同门共享文档,以及附带 `github上的fiber210 <https://github.com/FIBER210>`_ https://github.com/FIBER210的相关使用说明
 
 T300使用说明
 ==================
