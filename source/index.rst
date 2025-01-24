@@ -69,6 +69,13 @@ github仓库使用指南
 .. toctree::
    :maxdepth: 1
 
+   github仓库/docs
+
+用于存放Fiber210实验室的公开文档。
+
+.. toctree::
+   :maxdepth: 1
+
    github仓库/DXF2TXT
 
 处理图形的一些py脚本，可以实现
