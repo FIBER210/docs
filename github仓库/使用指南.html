@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>使用指南 &mdash; Fiber210 0.1.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=d786bb5c"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="FiberEngine" href="FiberEngine.html" />
+    <link rel="prev" title="打印参数设置" href="../iFiber%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E6%89%93%E5%8D%B0%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Fiber210
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">T300使用说明</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../T300%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E6%A6%82%E8%BF%B0.html">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../T300%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E5%88%9D%E6%AC%A1%E6%89%93%E5%8D%B0%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87.html">初次打印前的准备</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../T300%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E4%BD%BF%E7%94%A8T300%E8%BF%9B%E8%A1%8C%E6%89%93%E5%8D%B0.html">使用T300进行打印</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../T300%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E8%AE%BE%E5%A4%87%E7%9A%84%E7%BB%B4%E6%8A%A4%E5%8F%8A%E4%BF%9D%E5%85%BB.html">设备的维护及保养</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../T300%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E5%B8%B8%E8%A7%81%E6%95%85%E9%9A%9C%E5%8F%8A%E5%85%B6%E6%8E%92%E9%99%A4.html">常见故障及其排除</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">iFiber使用说明</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../iFiber%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E7%AE%80%E4%BB%8B.html">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../iFiber%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E5%AE%89%E8%A3%85.html">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../iFiber%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.html">使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../iFiber%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E6%89%93%E5%8D%B0%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.html">打印参数设置</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">github仓库使用指南</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">使用指南</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">1.下拉代码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">2.协同工作</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="FiberEngine.html">FiberEngine</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="iFiber.html">iFiber</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="config.html">config</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="docs.html">docs</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="DXF2TXT.html">DXF2TXT</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Fiber210</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">使用指南</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/github仓库/使用指南.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>使用指南<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>首先，若需要加入实验室的GitHub组群，请联系孙晨。</p>
+<p>如果仅仅需要使用下拉代码看第一部分，如果有协同工作需求看第二部分.</p>
+<section id="id2">
+<h2>1.下拉代码<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>直接从github上下拉代码使用</p>
+<figure class="align-center" id="id3">
+<img alt="../_images/%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6.png" src="../_images/%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6.png" />
+<figcaption>
+<p><span class="caption-text">图1.1 下载文件</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id4">
+<h2>2.协同工作<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p>注意：在修改代码的时候不要直接改变main分支。</p>
+<p>使用desktop实现代码的上传和下拉。</p>
+<ul class="simple">
+<li><p>首先下载desktop</p></li>
+<li><p>在挂梯子的条件下打开desktop进行如下操作</p></li>
+</ul>
+<figure class="align-center" id="id5">
+<img alt="../_images/%E5%85%8B%E9%9A%86%E4%BB%93%E5%BA%93.png" src="../_images/%E5%85%8B%E9%9A%86%E4%BB%93%E5%BA%93.png" />
+<figcaption>
+<p><span class="caption-text">图2.1 克隆仓库</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id6">
+<img alt="../_images/%E9%80%89%E6%8B%A9%E4%BB%93%E5%BA%93.png" src="../_images/%E9%80%89%E6%8B%A9%E4%BB%93%E5%BA%93.png" />
+<figcaption>
+<p><span class="caption-text">图2.2 选择仓库</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id7">
+<img alt="../_images/%E6%96%B0%E5%BB%BA%E5%88%86%E6%94%AF.png" src="../_images/%E6%96%B0%E5%BB%BA%E5%88%86%E6%94%AF.png" />
+<figcaption>
+<p><span class="caption-text">图2.3 新建分支</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id8">
+<img alt="../_images/%E4%BF%AE%E6%94%B9%E5%86%85%E5%AE%B9.png" src="../_images/%E4%BF%AE%E6%94%B9%E5%86%85%E5%AE%B9.png" />
+<figcaption>
+<p><span class="caption-text">图2.4 修改内容</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../iFiber%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E6%89%93%E5%8D%B0%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.html" class="btn btn-neutral float-left" title="打印参数设置" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="FiberEngine.html" class="btn btn-neutral float-right" title="FiberEngine" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024, ldx。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
