@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>自定义纤维路径添加方式 &mdash; Fiber210 0.1.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=d786bb5c"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="使用指南" href="../github%E4%BB%93%E5%BA%93/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html" />
+    <link rel="prev" title="打印参数设置" href="%E6%89%93%E5%8D%B0%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Fiber210
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">T300使用说明</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../T300%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E6%A6%82%E8%BF%B0.html">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../T300%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E5%88%9D%E6%AC%A1%E6%89%93%E5%8D%B0%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87.html">初次打印前的准备</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../T300%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E4%BD%BF%E7%94%A8T300%E8%BF%9B%E8%A1%8C%E6%89%93%E5%8D%B0.html">使用T300进行打印</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../T300%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E8%AE%BE%E5%A4%87%E7%9A%84%E7%BB%B4%E6%8A%A4%E5%8F%8A%E4%BF%9D%E5%85%BB.html">设备的维护及保养</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../T300%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E5%B8%B8%E8%A7%81%E6%95%85%E9%9A%9C%E5%8F%8A%E5%85%B6%E6%8E%92%E9%99%A4.html">常见故障及其排除</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">iFiber使用说明</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="%E7%AE%80%E4%BB%8B.html">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E5%AE%89%E8%A3%85.html">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.html">使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E6%89%93%E5%8D%B0%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.html">打印参数设置</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">自定义纤维路径添加方式</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#txt">1.txt手写</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python">2.使用python脚本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#grassghpper">3.Grassghpper生成</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">github仓库使用指南</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../github%E4%BB%93%E5%BA%93/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html">使用指南</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../github%E4%BB%93%E5%BA%93/FiberEngine.html">FiberEngine</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../github%E4%BB%93%E5%BA%93/iFiber.html">iFiber</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../github%E4%BB%93%E5%BA%93/config.html">config</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../github%E4%BB%93%E5%BA%93/docs.html">docs</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../github%E4%BB%93%E5%BA%93/DXF2TXT.html">DXF2TXT</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Fiber210</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">自定义纤维路径添加方式</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/iFiber使用说明/自定义纤维路径添加方式.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>自定义纤维路径添加方式<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>在有设计复杂模型纤维增强、特定路径纤维增强等需求的时候，我们往往需要自己绘制纤维路径并添加进模型生成gcode。</p>
+<p>通常我们打印纯塑料模型的时候需要用到模型的stl文件，在我们为该模型添加自定义纤维路径增强时，我们需要为其添加一个txt文件，用来代指碳纤维的路径。（在添加时我们需要注意txt文件和stl文件是否位置匹配）</p>
+<p>在txt文件中每行有4个值：x y z index</p>
+<p>单位是mm,具有相同index的点在同一条多段线上</p>
+<p>例如：</p>
+<p>0 0 0 1</p>
+<p>1 1 0 1</p>
+<p>表示在z=0高度上从(0,0)到(1,1)的一条线段</p>
+<p>目前我们有3中方式生成所需要用到的txt文件：</p>
+<ul class="simple">
+<li><p>txt手写</p></li>
+<li><p>使用python脚本</p></li>
+<li><p>Grassghpper生成</p></li>
+</ul>
+<section id="txt">
+<h2>1.txt手写<a class="headerlink" href="#txt" title="Link to this heading"></a></h2>
+<p>这个方法为最基本的方式，其它方法均是采用不同方法来自动生成txt文本。但txt手写的缺点是仅仅使用写一些简单的纤维路径。</p>
+<figure class="align-center" id="id2">
+<img alt="../_images/txt%E6%96%87%E6%9C%AC%E7%A4%BA%E4%BE%8B.png" src="../_images/txt%E6%96%87%E6%9C%AC%E7%A4%BA%E4%BE%8B.png" />
+<figcaption>
+<p><span class="caption-text">图5.1</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="python">
+<h2>2.使用python脚本<a class="headerlink" href="#python" title="Link to this heading"></a></h2>
+<ul>
+<li><dl>
+<dt>1.获得dxf文件</dt><dd><p>在CAD中生成单层纤维路径，选中纤维路径将其合并，如果不能合并先分解（防止打印的纤维不连续），将文件导出为dxf文件。按照需求画出一种或多种的纤维路径待后续处理。</p>
+<figure class="align-center" id="cad">
+<img alt="../_images/cad%E7%BA%A4%E7%BB%B4%E8%B7%AF%E5%BE%84%E7%A4%BA%E4%BE%8B.png" src="../_images/cad%E7%BA%A4%E7%BB%B4%E8%B7%AF%E5%BE%84%E7%A4%BA%E4%BE%8B.png" />
+<figcaption>
+<p><span class="caption-text">图5.2</span><a class="headerlink" href="#cad" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>2.将dxf文件变成txt文件</dt><dd><p>使用GitHub的DXF2TXT仓库 <a class="reference external" href="https://github.com/FIBER210/DXF2TXT">https://github.com/FIBER210/DXF2TXT</a> 的dxfReader.py脚本，具体使用说明查看仓库的readme</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="grassghpper">
+<h2>3.Grassghpper生成<a class="headerlink" href="#grassghpper" title="Link to this heading"></a></h2>
+<ul>
+<li><p>1.在犀牛中得到纤维路径</p>
+<blockquote>
+<div><p>利用导入dxf文件或者直接在犀牛中绘制，得到需要添加的总纤维路径。（注意路径的第一层高度不为0，为层高h）最后将纤维路径的所有线段进行组合操作，如果不能合并先进行炸开操作。</p>
+</div></blockquote>
+</li>
+<li><p>2.将纤维路径添加到Grasshopper的曲线模块中</p>
+<blockquote>
+<div><figure class="align-center" id="id3">
+<img alt="../_images/%E8%AE%BE%E7%BD%AE%E6%9B%B2%E7%BA%BF.png" src="../_images/%E8%AE%BE%E7%BD%AE%E6%9B%B2%E7%BA%BF.png" />
+<figcaption>
+<p><span class="caption-text">图5.3</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>获得纤维生成模块为 <a class="reference external" href="https://github.com/FIBER210/docs/tree/main/extra">GitHub仓库</a> 上的导出纤维路径.ghuser。</p>
+<p>将该模块导入grasshopper中，把导出纤维路径.ghuser放进下图的文件夹内。</p>
+<figure class="align-center" id="id4">
+<img alt="../_images/%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97.png" src="../_images/%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97.png" />
+<figcaption>
+<p><span class="caption-text">图5.4</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>使用该模块。</p>
+<figure class="align-center" id="id5">
+<img alt="../_images/%E4%BD%BF%E7%94%A8%E6%A8%A1%E5%9D%97.png" src="../_images/%E4%BD%BF%E7%94%A8%E6%A8%A1%E5%9D%97.png" />
+<figcaption>
+<p><span class="caption-text">图5.5</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>将其与纤维生成模块相连。</p>
+<figure class="align-center" id="id6">
+<img alt="../_images/%E8%BF%9E%E6%8E%A5%E6%A8%A1%E5%9D%97.png" src="../_images/%E8%BF%9E%E6%8E%A5%E6%A8%A1%E5%9D%97.png" />
+<figcaption>
+<p><span class="caption-text">图5.6</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</li>
+<li><ol class="arabic simple" start="3">
+<li><p>获得纤维路径的txt文件</p></li>
+</ol>
+<blockquote>
+<div><p>双击模块中的盒子，设定保存的txt路径，点击按钮可以获得纤维路径的txt文件</p>
+<figure class="align-center" id="id7">
+<img alt="../_images/%E8%8E%B7%E5%BE%97txt%E6%96%87%E4%BB%B6.png" src="../_images/%E8%8E%B7%E5%BE%97txt%E6%96%87%E4%BB%B6.png" />
+<figcaption>
+<p><span class="caption-text">图5.7</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="%E6%89%93%E5%8D%B0%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.html" class="btn btn-neutral float-left" title="打印参数设置" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../github%E4%BB%93%E5%BA%93/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html" class="btn btn-neutral float-right" title="使用指南" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024, ldx。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
