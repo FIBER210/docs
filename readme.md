@@ -20,6 +20,6 @@
 
     ![图2.png](图2.png)
 
-4. 修改后运行 make html 可以生成网页页面，运行make clean 可以清空，运行 make html 点开 build/html/index,html 查看修改后的内容。
+4. 修改后再docs文件夹终端下运行 make html 可以生成网页页面，运行make clean 可以清空，运行 make html 点开 build/html/index,html 查看修改后的内容。
 
 5. 若修改后内容无误，先运行 make clean，将修改的内容上传并合并到main分支。 
